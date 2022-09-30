@@ -8,21 +8,19 @@
     <title>SheThePeople is Asia&#039;s Largest Women&#039;s Channel | Inspiring Stories of Women</title>
 
     <style>
-       *{
-        margin: 0;
-        padding: 0;
-       }
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
         /* universal css */
         .uni-padding {
+            margin: 0 auto;
             padding: 0px 75px;
-            
+
         }
 
         .ads-top {
-            position: absolute;
-            top: 0;
-            left: 300px;
             width: 728px;
             height: 180px;
             background: url('img/adimg.png');
@@ -30,7 +28,7 @@
         }
 
         .ads-main {
-          
+
             width: 728px;
             height: 180px;
             background: url('img/adimg.png');
@@ -42,7 +40,7 @@
             font-family: 'Inter';
             font-style: normal;
             width: 1200px;
-            margin-top: 190px;
+            margin: 19px auto;
         }
 
         .clickable {
@@ -59,7 +57,7 @@
 
         /* left column css */
         #left-col {
-            width: 70%;
+            width: 850px;
             margin-right: 26px;
         }
 
@@ -89,7 +87,8 @@
             line-height: 33px;
             padding: 30px 0px 0px 0px;
         }
-        .article-title h2{
+
+        .article-title h2 {
             width: 350px;
         }
 
@@ -122,12 +121,11 @@
             font-size: 14px;
             line-height: 26px;
             text-decoration: none;
+            padding-right: 255px;
+
         }
 
-        /* .share {
-            padding-left: 250px;
-        } */
-
+       
         .article-title h2 {
             margin: 2px 2px;
         }
@@ -165,11 +163,17 @@
             margin-top: 4rem;
         }
 
-        #right-col {
+        #right-col{
             margin-top: 4rem;
-            width: 30%;
+            width: 330px;
             margin-left: 26px;
-          
+
+        }
+
+        .stick-after {
+            position: fixed;
+            bottom: 0;
+            margin-left: 902px !important;
         }
 
         .ads {
@@ -194,7 +198,7 @@
 
         .input-em {
             margin: 10px 0px;
-            width: 90%;
+            width: 296px;
             height: 35px;
             background: #FFFFFF;
             border: 1px solid #CFCFCF;
@@ -209,7 +213,7 @@
             position: absolute;
             top: 0;
             border-radius: 5px;
-            right: 34px;
+            right: 6px;
             z-index: 2;
             border: none;
             height: 35px;
@@ -239,9 +243,11 @@
             width: 108px;
             height: 81px;
         }
-        .description p{
+
+        .description p {
             width: 350px;
         }
+
         .desc {
             margin: 0px 5px;
             font-family: 'Inter';
@@ -254,7 +260,8 @@
         .more {
             border-top: 1px solid grey;
             border-bottom: 1px solid grey;
-            padding: 30px 74px;        }
+            padding: 30px 74px;
+        }
 
         .morestory {
             text-decoration: none;
@@ -276,7 +283,6 @@
             text-decoration: none;
             color: black;
         }
-        
     </style>
 </head>
 
@@ -297,8 +303,9 @@
 
 
                     <!-- front article code -->
-                    <a href="" class="clickable">
-                        <div class="article-box">
+
+                    <div class="article-box">
+                        <a href="" class="clickable">
                             <div class="article-cover">
                                 <img src="img/image 10.svg" alt="">
                             </div>
@@ -329,8 +336,9 @@
                                         Pathak’s 1999 hit song Maine Payal Hai Chhankai.</p>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+
                 </section>
                 <section class="page">
                     <div class="post-collection">
@@ -842,6 +850,19 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 1000) {
+                $("#right-col").addClass("stick-after");
+            }
+            else {
+                $("#right-col").removeClass("stick-after");
+            }
+        }); 
+    </script>
 </body>
 
 </html>
