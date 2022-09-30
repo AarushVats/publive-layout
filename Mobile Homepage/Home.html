@@ -23,16 +23,24 @@
         .ads-top {
             width: 728px;
             height: 180px;
-            background: url('img/adimg.png');
             margin: 19px auto;
+        }
+        .ads-top img{
+            width: 728px;
+            height: 180px;
+            
         }
 
         .ads-main {
-
             width: 728px;
             height: 180px;
             background: url('img/adimg.png');
             margin: 19px auto;
+        }
+        .ads-main img{
+            width: 728px;
+            height: 180px;
+            
         }
 
         .main {
@@ -57,18 +65,17 @@
 
         /* left column css */
         #left-col {
-            width: 850px;
-            margin-right: 26px;
+         width: 888px;
+            margin-right: 13px;
         }
 
         .article {
-            margin-left: -43px;
-
-
+            margin-left: 43px;
         }
 
         .article-box {
             display: flex;
+            margin-bottom: 25px;
         }
 
         .article-cover {
@@ -78,18 +85,20 @@
         }
 
         .article-cover img {
-            padding: 32px 43px 32px 0px;
+            /* padding: 32px 43px 32px 0px; */
+            width: 540px;
+            height: 405px;
         }
 
         .article-header {
-
             font-weight: 700;
             line-height: 33px;
             padding: 30px 0px 0px 0px;
         }
 
         .article-title h2 {
-            width: 350px;
+            width: 300px;
+            margin: 2px 2px;
         }
 
         .links {
@@ -121,19 +130,17 @@
             font-size: 14px;
             line-height: 26px;
             text-decoration: none;
-            padding-right: 255px;
+            padding-right: 232px;
 
         }
 
-       
-        .article-title h2 {
-            margin: 2px 2px;
-        }
+
 
         /* post collection css */
         .post-collection {
             display: grid;
-            width: 700px;
+            width: 888px;
+            margin-top: 25px;
         }
 
         .small-post {
@@ -143,7 +150,11 @@
             line-height: 24px;
             margin-right: 36px
         }
-
+        .post-cover{
+            width: 260px;
+            height: 192px;
+            margin: 5px 0px;
+        }
         .p-cover {
             width: 260px;
             height: 192px;
@@ -152,6 +163,8 @@
         .post-title {
             margin-top: 15px;
             margin-bottom: 40px;
+            width: 278px;
+
         }
 
         .category {
@@ -163,20 +176,24 @@
             margin-top: 4rem;
         }
 
-        #right-col{
+        #right-col {
             margin-top: 4rem;
             width: 330px;
-            margin-left: 26px;
+            margin-left: 13px;
 
         }
 
         .stick-after {
             position: fixed;
             bottom: 0;
-            margin-left: 902px !important;
+            margin-left: 913px !important;
         }
 
         .ads {
+            width: 300px;
+            height: 250px;
+        }
+        .ads img{
             width: 300px;
             height: 250px;
         }
@@ -244,17 +261,23 @@
             height: 81px;
         }
 
+        .l-cover {
+            width: 108px;
+            height: 81px;
+        }
+
         .description p {
-            width: 350px;
+            width: 300px;
         }
 
         .desc {
-            margin: 0px 5px;
+            margin-right: 60px;
             font-family: 'Inter';
             font-style: normal;
             font-weight: 600;
             font-size: 14px;
             line-height: 18px;
+            width: 165px;
         }
 
         .more {
@@ -278,6 +301,10 @@
             width: 330px;
             height: 600px;
         }
+        .ads-sec{
+            width: 330px;
+            height: 600px;
+        }
 
         .latest a {
             text-decoration: none;
@@ -294,7 +321,7 @@
 
 
         <div class="ads-top">
-            <!-- ads image -->
+            <img src="img/adimg.png" alt="">
         </div>
         <div class="main">
 
@@ -305,16 +332,16 @@
                     <!-- front article code -->
 
                     <div class="article-box">
-                        <a href="" class="clickable">
+                        <a href="" aria-label="" class="clickable">
                             <div class="article-cover">
-                                <img src="img/image 10.svg" alt="">
+                                <img src="img/image 10.svg" alt="cover image">
                             </div>
                             <div class="article">
                                 <div class="article-header">
                                     <div class="links">
-                                        <div><a href="" class="category-link ">#Opinion</a></div><a class='share'
-                                            href="">
-                                            <div><img src="img/share.png" alt=""></div>
+                                        <div><a href="" aria-label="" class="category-link ">#Opinion</a></div><a
+                                            class='share' href="">
+                                            <div><img src="img/share.png" alt="cover image"></div>
                                         </a>
                                     </div>
 
@@ -346,12 +373,12 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 11.svg" alt="">
+                                                    <img class=p-cover src="img\image 11.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -363,12 +390,12 @@
 
                                     </td>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
                                                     <img class=p-cover src="img\image 12.svg" alt="">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -380,12 +407,12 @@
 
                                     </td>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 13.svg" alt="">
+                                                    <img class=p-cover src="img\image 13.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -401,12 +428,12 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 14.svg" alt="">
+                                                    <img class=p-cover src="img\image 14.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -418,12 +445,12 @@
 
                                     </td>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 15.svg" alt="">
+                                                    <img class=p-cover src="img\image 15.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -435,12 +462,12 @@
 
                                     </td>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 16.svg" alt="">
+                                                    <img class=p-cover src="img\image 16.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -462,24 +489,24 @@
                 </section>
                 <section class="page">
                     <div class="ads-main">
-                        <!-- ads image -->
+                        <img src="img/adimg.png" alt="">
                     </div>
                 </section>
                 <section class="page">
 
                     <div class="category">Opinion</div>
                     <!-- front article code -->
-                    <a href="" class="clickable">
+                    <a href="" aria-label="" class="clickable">
                         <div class="article-box">
                             <div class="article-cover">
-                                <img src="img/article-cover.svg" alt="">
+                                <img src="img/article-cover.svg" alt="cover image">
                             </div>
                             <div class="article">
                                 <div class="article-header">
                                     <div class="links">
-                                        <div><a href="" class="category-link ">#Opinion</a></div><a class='share'
-                                            href="">
-                                            <div><img src="img/share.png" alt=""></div>
+                                        <div><a href="" aria-label="" class="category-link ">#Opinion</a></div><a
+                                            class='share' href="">
+                                            <div><img src="img/share.png" alt="cover image"></div>
                                         </a>
                                     </div>
 
@@ -510,12 +537,12 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 11.svg" alt="">
+                                                    <img class=p-cover src="img\image 11.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -527,12 +554,12 @@
 
                                     </td>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 12.svg" alt="">
+                                                    <img class=p-cover src="img\image 12.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -544,12 +571,12 @@
 
                                     </td>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 13.svg" alt="">
+                                                    <img class=p-cover src="img\image 13.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -565,12 +592,12 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 14.svg" alt="">
+                                                    <img class=p-cover src="img\image 14.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -582,12 +609,12 @@
 
                                     </td>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 15.svg" alt="">
+                                                    <img class=p-cover src="img\image 15.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -599,12 +626,12 @@
 
                                     </td>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 16.svg" alt="">
+                                                    <img class=p-cover src="img\image 16.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -626,24 +653,24 @@
                 </section>
                 <section class="page">
                     <div class="ads-main">
-                        <!-- ads image -->
+                        <img src="img/adimg.png" alt="">
                     </div>
                 </section>
                 <section class="page">
 
                     <div class="category">Entertainment</div>
                     <!-- front article code -->
-                    <a href="" class="clickable">
+                    <a href="" aria-label="" class="clickable">
                         <div class="article-box">
                             <div class="article-cover">
-                                <img src="img/article-cover.svg" alt="">
+                                <img src="img/article-cover.svg" alt="cover image">
                             </div>
                             <div class="article">
                                 <div class="article-header">
                                     <div class="links">
-                                        <div><a href="" class="category-link ">#Opinion</a></div><a class='share'
-                                            href="">
-                                            <div><img src="img/share.png" alt=""></div>
+                                        <div><a href="" aria-label="" class="category-link ">#Opinion</a></div><a
+                                            class='share' href="">
+                                            <div><img src="img/share.png" alt="cover image"></div>
                                         </a>
                                     </div>
 
@@ -674,12 +701,12 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 11.svg" alt="">
+                                                    <img class=p-cover src="img\image 11.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -691,12 +718,12 @@
 
                                     </td>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 12.svg" alt="">
+                                                    <img class=p-cover src="img\image 12.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -708,12 +735,12 @@
 
                                     </td>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 13.svg" alt="">
+                                                    <img class=p-cover src="img\image 13.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -729,12 +756,12 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 14.svg" alt="">
+                                                    <img class=p-cover src="img\image 14.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -746,12 +773,12 @@
 
                                     </td>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 15.svg" alt="">
+                                                    <img class=p-cover src="img\image 15.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -763,12 +790,12 @@
 
                                     </td>
                                     <td>
-                                        <a href="">
+                                        <a href="" aria-label="">
                                             <div class="small-post">
                                                 <div class="post-cover">
-                                                    <img class=p-cover src="img\image 16.svg" alt="">
+                                                    <img class=p-cover src="img\image 16.svg" alt="cover image">
                                                 </div>
-                                                <a href="" class="category-link">#personalstories</a>
+                                                <a href="" aria-label="" class="category-link">#personalstories</a>
                                                 <div class="post-title">
                                                     Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                                     General
@@ -791,7 +818,7 @@
             </div>
             <div id="right-col">
                 <div class="ads">
-                    <img src="img/Rectangle 16.svg" alt="">
+                    <img src="img/Rectangle 16.svg" alt="cover image">
                 </div>
                 <div class="subscribe">
                     <div class="suscribe-text">
@@ -807,33 +834,33 @@
                     <div class="l-title">
                         Latest Stories
                     </div>
-                    <a href="">
+                    <a href="" aria-label="">
                         <div class="latest-news">
                             <div class="desc">Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                 General
                                 Motors</div>
                             <div class="l-cover">
-                                <img src="img/image 17.svg" alt="">
+                                <img src="img/image 17.svg" alt="cover image">
                             </div>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="" aria-label="">
                         <div class="latest-news">
                             <div class="desc">Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                 General
                                 Motors</div>
                             <div class="l-cover">
-                                <img src="img/image 17.svg" alt="">
+                                <img src="img/image 17.svg" alt="cover image">
                             </div>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="" aria-label="">
                         <div class="latest-news">
                             <div class="desc">Who Is Dhivya Suryadevara? CFO At Stripe, Former First Woman CFO At
                                 General
                                 Motors</div>
                             <div class="l-cover">
-                                <img src="img/image 17.svg" alt="">
+                                <img src="img/image 17.svg" alt="cover image">
                             </div>
                         </div>
                     </a>
@@ -845,7 +872,7 @@
                 </div>
 
                 <div class="ads-sec">
-                    <a href="/"><img src="img/Rectangle 24.svg" alt=""></a>
+                    <a href="/ aria-label="""><img src="img/Rectangle 24.svg" alt="cover image"></a>
                 </div>
             </div>
         </div>
@@ -855,7 +882,7 @@
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
 
-            if (scroll >= 1000) {
+            if (scroll >= 850) {
                 $("#right-col").addClass("stick-after");
             }
             else {
